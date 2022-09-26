@@ -39,4 +39,4 @@ Page({
 })
 ```
 
-<img width="374" src="WX20220926-132517.png">
+<img width="374" src="WechatIMG548.jpeg">
