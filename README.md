@@ -2,17 +2,19 @@
 
 本项目为微信小程序组件 部分依赖于[qtext-parse](https://github.com/we-digest/qtext-parse)
 
+暂时只支持以 git submodule 的方式引入 暂不支持 miniprogram_npm module
+
 ```sh
 cd miniprogram
 npm install --save qtext-parse
-npm install --save wxacomp-qtext
+git submodule add git@github.com:we-digest/wxacomp-qtext.git
 ```
 
 ```js
 // pages/test/test.json
 {
   "usingComponents": {
-    "qtext": "wxacomp-qtext/qtext"
+    "qtext": "../../wxacomp-qtext/qtext"
   }
 }
 ```
