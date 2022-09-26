@@ -1,0 +1,13 @@
+.qtext .text,
+.qtext .image {
+  vertical-align: bottom;
+}
+.qtext .image {
+  --icon-size: 1em;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transform-origin: bottom center;
+  transform: scale(1.3);
+  /* margin: 0 .2em; */ /* 左右不含空格 */
+  margin: 0 -.05em; /* 左右含空格 */
+}

@@ -1,0 +1,29 @@
+{
+  "name": "wxacomp-qtext",
+  "version": "0.0.0",
+  "description": "微信小程序 含QQ表情解析 文本展示组件",
+  "keywords": [
+    "qq",
+    "wechat",
+    "face",
+    "emoji",
+    "emotion",
+    "qtext-parse",
+    "qtext",
+    "text"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we-digest/wxacomp-qtext.git"
+  },
+  "license": "ISC",
+  "files": [
+    "*.js",
+    "*.json",
+    "*.wxml",
+    "*.wxss"
+  ],
+  "peerDependencies": {
+    "qtext-parse": "^0.0.2"
+  }
+}

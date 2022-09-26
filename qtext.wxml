@@ -1,0 +1,19 @@
+<wxs module="m1">
+  var qqfaceUrl = 'https://unpkg.com/qqface@0.1.2/img/'
+  module.exports.getQQfaceUrl = function (item) {
+    // 注意 png仅支持 0~104 gif支持0~121
+    return qqfaceUrl + item.index + (item.index > 104 ? '.gif' : '.png')
+  }
+</wxs>
+
+<view class="qtext">
+  <block wx:for-items="{{segments}}" wx:key="index">
+    <!-- 这里在表情图标左右插入text空格 是为了添加下划线时能被覆盖到 -->
+    <block wx:if="{{item.type === 'qqface'}}">
+      <text>{{' '}}</text>
+      <image class="image" src="{{m1.getQQfaceUrl(item)}}"></image>
+      <text>{{' '}}</text>
+    </block>
+    <text wx:elif="{{item.type === 'text'}}" class="text">{{item.text}}</text>
+  </block>
+</view>
