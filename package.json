@@ -19,6 +19,6 @@
   },
   "license": "ISC",
   "peerDependencies": {
-    "qtext-parse": "^0.0.2"
+    "qtext-parse": "^0.0.7"
   }
 }
