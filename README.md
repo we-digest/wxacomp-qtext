@@ -42,3 +42,17 @@ Page({
 ```
 
 <img width="374" src="WechatIMG548.jpeg">
+
+---
+
+__加载提速：支持自定义 qqface URL__
+
+`props.qqfaceUrl`默认值：`https://unpkg.com/qqface@0.1.2/img/`<br>
+图片目录内容参考：https://unpkg.com/browse/qqface@0.1.2/img/
+
+```html
+<view>
+  <qtext qqfaceUrl="https://myhost.com/qqface/img/"
+    text="{{content}}"></qtext>
+</view>
+```

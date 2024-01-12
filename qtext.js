@@ -9,6 +9,10 @@ Component({
       type: String,
       value: '',
     },
+    qqfaceUrl: {
+      type: String,
+      value: 'https://unpkg.com/qqface@0.1.2/img/',
+    },
   },
   data: {
     segments: [],
